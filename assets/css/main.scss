@@ -109,12 +109,12 @@ header{
 #images1{
 	background-color: white;
 	.row{
-		margin: 5% 0;
+		margin: 5% 0 ;
 	}
 }
 #thumbs1{
 	background-color: white;
-	padding: 5% 0;
+	padding: 3% 0;
 	.thumbnail{
 		@include thumbs1 (none,inline);
 	}
@@ -127,6 +127,41 @@ header{
 	.thum4{
 		@include thumbs1 (none, inline);
 	}
+	.line{
+		background-color: transparent;
+		border-top: 2px solid $light-gray;
+		border-bottom: 2px solid $light-gray;
+		height: 8px;
+		margin-top: -20px;
+	}
+	.bco{
+		position: relative;
+		ul{
+			background-color: white;
+			display: inline;
+			padding: 2%;
+		}
+		ul li{
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 1%;
+			padding: 0 1%;
+		}
+		i{
+			color: #CBC9C9;
+		}
+		a li{
+			color: #CBC9C9;
+			font-size: 1.5em;
+			font-weight: 500;
+			&:hover, &:focus, &:active{
+				color: black;
+			}
+		}
+	}
+	.mb-2{
+		margin-bottom:4%;
+	}
 }
 #logos{
 	background-image: url(../../assets/images/client-bg.jpg);
@@ -136,6 +171,7 @@ header{
 	padding: 5% 0;
 }
 #thumbs2{
+	@extend #thumbs1;
 	background-color: white;
 	height: 500px;
 	.thumb1{
@@ -215,5 +251,63 @@ header{
 		background-color: gray;
 		color: white;
 		border: none;
+	}
+}
+/*////////////QUERIES////////////*/
+
+@media (max-width: 768px) {
+	.navbar-left>li>a {
+		text-align: center;
+	}
+	#contacto{
+		form{
+			margin-top: 5%;
+			.ancho{
+				width: 46%;
+			}
+			.ml{
+				margin-left: 5%;
+			}
+		}
+	}
+	footer{
+		ul{
+			padding-left: 15%;
+			li{
+				margin: 0% 0;
+			}
+		}
+		section{
+			.right, .left{
+				float: none;
+				text-align: center;
+			}
+		}
+	}
+	#slide2{
+		h1{
+			padding: 5%;
+			font-size: 3em;
+		}
+	}
+	#idiomas{
+		.welcome{
+			text-align: center;
+		}
+		.btn-group{
+			text-align: center;
+			.dropdown-menu{
+				background-color: $light-gray!important;
+			}
+		}
+		.right{
+			float: none;
+		}
+	}
+	header{
+		.col-xs-12{
+			text-align: center;
+			margin-bottom: 4%;
+		}
 	}
 }

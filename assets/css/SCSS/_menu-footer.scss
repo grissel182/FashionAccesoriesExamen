@@ -3,7 +3,11 @@
 .navbar-inverse {
      background-color: transparent !important; 
      border-color: transparent !important; 
-     margin-bottom: -22px !important;
+     margin-bottom: -2px !important;
+	.navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	    color: white !important;
+	    background-color: $rosa !important;
+	}
 }
 .navbar-left>li>a {
 	color: black !important;
