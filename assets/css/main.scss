@@ -1,0 +1,219 @@
+@import "SCSS/_variables";
+@import "SCSS/_mixins";
+@import "SCSS/_menu-footer";
+
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+body{
+	background-color: $light-gray;
+}
+.inline{
+	display: inline-block;
+}
+.middle{
+	vertical-align: middle;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.cien{
+	width: 100%;
+}
+#idiomas{
+	background-color: $light-gray;
+	min-height: 35px;
+	padding: 5px 0;
+	color: $dark-gray;
+	.welcome{
+		margin: 0;
+		padding: 8px 0;
+		vertical-align: middle;
+	}
+	button{
+		z-index: 1111;
+		margin: 0 !important;
+		&:hover, &:focus, &:active, &:visited{
+			box-shadow: inset 0 0px 0px ;
+		}
+	}
+	.btn-group{
+		*{
+			color: $dark-gray !important;
+		}
+		border: none !important;
+		.btn-default{
+			background-color: $light-gray !important;
+			border: none !important;
+		}
+		.dropdown-menu{
+			z-index: 888;
+			border: none !important;
+			background-color: transparent !important;
+			margin-top: 5px;
+			box-shadow: none !important;
+			ul{
+				margin-top: 0;
+				padding: 0;
+			}
+			li > a {
+			    display: block;
+			    padding: 2px 10px;
+			    margin: 0;
+			    text-align: left;
+			    font-size: 12px;
+			    width: 80%;
+			}
+			i{
+				color: $dark-gray !important;
+			}
+		}
+	}
+}
+header{
+	padding: 4% 0;
+	background: white;
+	.inline{
+		color: $dark-gray;
+		line-height: 0;
+	}
+	form{
+		z-index: -99999 !important;
+	}
+	input{
+		margin-top: 10px;
+	}
+	.btn{
+		border-left: none !important;
+		&:hover{
+			background-color:white !important;
+		}
+	}
+}
+#slide{
+	.titular{
+		border: 3px solid $light-gray;
+		color: $light-gray;
+		display: inline-block;
+		padding: 0 5%;
+	}
+	h5{
+		letter-spacing: 10px;
+	}
+	.carousel-caption {
+		top: 30% !important;
+	}
+}
+#images1{
+	background-color: white;
+	.row{
+		margin: 5% 0;
+	}
+}
+#thumbs1{
+	background-color: white;
+	padding: 5% 0;
+	.thumbnail{
+		@include thumbs1 (none,inline);
+	}
+	.thum2{
+		@include thumbs1 (inline,inline);
+	}
+	.thum3{
+		@include thumbs1 (inline, none);
+	}
+	.thum4{
+		@include thumbs1 (none, inline);
+	}
+}
+#logos{
+	background-image: url(../../assets/images/client-bg.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:100%;
+	padding: 5% 0;
+}
+#thumbs2{
+	background-color: white;
+	height: 500px;
+	.thumb1{
+		@include thumbs2 (inline, inline);
+	}
+	.thumb2{
+		@include thumbs2 (none, inline);
+	}
+	.thumb3{
+		@include thumbs2 (none, none);
+	}
+	.thumb4{
+		@include thumbs2 (none, inline);
+	}
+	.thumb5{
+		@include thumbs2 (inline, none);
+	}
+	.thumb6{
+		@include thumbs2 (none, inline);
+	}
+}
+#blog1{
+	padding: 5% 0;
+	.blogs{
+		@include blog1;
+	}
+}
+#blocks{
+	@include blocks;
+	font-family: 'JuliusSansOne-Regular'!important;
+}
+
+/*//////////////////PAGINA CONTACTO////////////*/
+#slide2{
+	background-image: url(../../assets/images/slider2.jpg);
+	.black{
+		background-color: rgba(0, 0, 0, .6);
+		padding: 10% 0;
+	}
+	h1{
+		background-color: #FF7572;
+		padding: 2%;
+		font-size: 5em;
+		font-weight: 800;
+		color: white !important;
+		margin-top: 0;
+	}
+	p, b{
+		color: white;
+	}
+}
+#contacto{
+	padding: 5% 0;
+	background-color: white;
+	form{
+		input, textarea{
+			padding: 2%;
+			background-color: $light-gray;
+			border: 0px;
+		}
+		input{
+		    border: 0px inset;
+		    color: #ACAAAA;
+		}
+		.mb-1{
+			margin-bottom: 6%;
+		}
+		.ancho{
+			width: 47%;
+		}
+		.ml{
+			margin-left: 5%;
+		}
+	}
+	button{
+		border-radius: 0px;
+		background-color: gray;
+		color: white;
+		border: none;
+	}
+}

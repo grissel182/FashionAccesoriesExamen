@@ -1,0 +1,148 @@
+@import "../SCSS/_variables";
+
+@mixin thumbs1 ($show, $newshow){
+	.stars{
+		 a i {
+			color: black;
+		}
+		.fa-star-o{
+			&:focus, &:visited{
+				content: "\f089";
+			}		
+		}
+		.fa-star{
+			&:focus, &:visited{
+				content: "\f006";
+			}		
+		}
+	}
+	p{
+		color: $rosa;
+		margin-top: 2%;
+		b small{
+			color: black;
+		}
+		span{
+			color: gray;
+			text-decoration: line-through;
+			margin-right: 8%;
+		}
+	}
+	.sale{
+		display: ($show);
+		background-color: black;
+		position: absolute;
+		color: white;
+		padding: 2% 3.4%;
+		top: 5%;
+		left: 20px;
+	}
+	.new{
+		display: ($newshow);
+		background-color: $rosa;
+		position: absolute;
+		color: white;
+		padding: 2% 4%;
+		top: 15%;
+		left: 20px;
+	}
+/*	&>a:hover{
+		display:non;
+	}*/
+}
+@mixin thumbs2 ($show, $newshow){
+	.stars{
+		 a i {
+			color: black;
+		}
+		.fa-star-o{
+			&:focus, &:visited{
+				content: "\f089";
+			}		
+		}
+		.fa-star{
+			&:focus, &:visited{
+				content: "\f006";
+			}		
+		}
+	}
+	p{
+		color: $rosa;
+		margin-top: 2%;
+		b small{
+			color: black;
+			font-size: 1em;
+		}
+		span{
+			color: gray;
+			text-decoration: line-through;
+			margin-right: 8%;
+		}
+	}
+	.sale{
+		display: ($show);
+		background-color: black;
+		position: absolute;
+		color: white;
+		padding: 2% 5%;
+		top: 5%;
+		left: 20px;
+		font-size: 13px;
+	}
+	.new{
+		display: ($newshow);
+		background-color: $rosa;
+		position: absolute;
+		color: white;
+		padding: 2% 6%;
+		top: 24%;
+		left: 20px;
+		font-size: 13px;
+	}
+	button{
+		border-radius: 0px !important;
+		background-color: black !important;
+		&:hover{
+			background-color:$rosa !important;
+			border-color: $rosa;
+		}
+	}
+	&>a:hover{
+		display:non;
+	}
+}
+@mixin blog1{
+	h4{
+		color: black !important;
+	}
+	p{
+		color: gray;
+	}
+	.pink{
+		color: $rosa;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+@mixin blocks{
+	color: gray;
+	background-color: white;
+	padding: 3% 0;
+	.borde{
+		border: 1px solid gray;
+		.cont-icon{
+			padding: 0 3% 1%;
+			border-right: 1px solid gray;
+			margin: 3% 2% 2%;
+		}
+	}
+	.inline{
+		vertical-align: middle;
+	}
+	h4, p {
+		line-height: .7em;
+	}
+}
+
+
