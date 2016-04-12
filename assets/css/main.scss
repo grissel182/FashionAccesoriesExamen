@@ -253,6 +253,49 @@ header{
 		border: none;
 	}
 }
+#blog1{
+	background-color: white;
+	.line{
+		background-color: transparent;
+		border-top: 2px solid $light-gray;
+		border-bottom: 2px solid $light-gray;
+		height: 8px;
+		margin-top: -20px;
+	}
+	.bco{
+		position: relative;
+		ul{
+			background-color: white;
+			display: inline;
+			padding: 2%;
+		}
+		ul li{
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 1%;
+			padding: 0 1%;
+		}
+		i{
+			color: #CBC9C9;
+		}
+		a li{
+			color: #CBC9C9;
+			font-size: 1.5em;
+			font-weight: 500;
+			&:hover, &:focus, &:active{
+				color: black;
+			}
+		}
+	}
+	.mb-2{
+		margin-bottom:4%;
+	}
+}
+#thumbs2{
+	.row2{
+		margin-top:55%;
+	}
+}
 /*////////////QUERIES////////////*/
 
 @media (max-width: 768px) {
@@ -308,6 +351,39 @@ header{
 		.col-xs-12{
 			text-align: center;
 			margin-bottom: 4%;
+		}
+	}
+	/*de la primera pagina*/
+	#slide{
+		.titular{
+			border: 1px solid $light-gray;
+			color: $light-gray;
+			display: inline-block;
+			padding: 0 1%;
+		}
+		h1{
+			font-size: 1em;
+		}
+		h5{
+			letter-spacing: 2px;
+			font-size: .5em;
+		}
+		.carousel-caption {
+			top: 1% !important;
+		}
+	}
+	#images1{
+		.cien{
+			padding-bottom: 2%;
+		}
+	}
+	#logos{
+		padding: 15%;
+	}
+	#blocks{
+		@include blocks;
+		.borde{
+			margin-top: 5%;
 		}
 	}
 }
